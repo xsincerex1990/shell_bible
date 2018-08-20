@@ -1,0 +1,43 @@
+Bash 
+
+- start all shell scripts with a shebang 
+- the shebang indicates which interpreter should be used 
+
+variables 
+- no spaces
+- prefer "" over '' because of literal interpretation (shell) and interpolation issues 
+
+logic
+list0; list (run list0 and then run list) 
+list0 & list1 (spawn a subshell to run list0 and execute list1) 
+list0 && list1 (execute list0 and if the exit status results in '0' then execute/run list1) 
+list0 || list1 (execute list0 and if its exit results in a non-zero status then run list1) 
+
+## Conditionals ##
+
+Ex.1 
+if list0 
+	then list1
+fi
+
+Explain: if list0 is true
+
+
+Ex.2 
+if list0 
+	then list1
+else 
+	list2
+fi
+
+
+
+Ex.3 
+if list0 
+then 
+	list1
+elif list2 
+then 
+	list3
+else 
+	list4
